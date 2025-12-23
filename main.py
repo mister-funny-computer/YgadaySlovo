@@ -9,3 +9,9 @@ while attempts > 0:
     print(f"Твоя буква {letter}")
     letters.append(letter)
     print(letters)
+    for symbol in secret_word:
+        if symbol in letters:
+            print(symbol, end = "")
+        else:
+            print("*", end = "")
+    print("")
