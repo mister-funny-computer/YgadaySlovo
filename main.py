@@ -5,6 +5,7 @@ attempts = 5
 letters = []
 
 while attempts > 0:
+    print(f"У тебя осталось попыток: {attempts}")
     letter = input("Введите букву: ")
     print(f"Твоя буква {letter}")
     letters.append(letter)
@@ -15,3 +16,14 @@ while attempts > 0:
         else:
             print("*", end = "")
     print("")
+
+    if letter not in secret_word:
+        print("Такой буквы в слове нет")
+        attempts = attempts - 1
+
+
+
+
+
+
+
